@@ -1,0 +1,38 @@
+h1,
+h2,
+h3,
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+ul {
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    list-style: none;
+    font-family: var(--primary-font-family);
+    color: var(--text-color);
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hero__button, .footer-form-button, .portfolio-button, .backdrop-form-button {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}

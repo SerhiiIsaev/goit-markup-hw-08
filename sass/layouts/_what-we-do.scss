@@ -1,0 +1,32 @@
+.work {
+    padding-top: 0px;
+}
+
+.work-list {
+    display: flex;
+}
+
+
+.work-list-item {
+    position: relative;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.work-img-text {
+    font-family: var(--primary-font-family);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--light-color);
+    position: absolute;
+    background-color: var(--work-text-img-color);
+    width: 100%;
+    bottom: 0px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
