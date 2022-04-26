@@ -1,3 +1,53 @@
+.hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/herobg.jpg);
+    max-width: 1600px;
+    background-color: var(--background-hero-color);
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
+}
+
+.hero__title {
+    font-family: var(--primary-font-family);
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    color: var(--light-color);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hero__button {
+    min-width: 200px;
+    min-height: 50px;
+    padding: 10px 22px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0px;
+    font-family: inherit;
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1, 88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--light-color);
+    box-shadow: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus,
+    &:hover {
+        background-color: var(--hover-main-button-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+    }
+}
+
+
 // .hero {
 //     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 //         url(../images/herobg.jpg);
