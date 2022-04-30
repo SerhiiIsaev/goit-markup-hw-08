@@ -1,8 +1,10 @@
 
+// =============================mobile=============================
+
 .portfolio-list-button {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
 }
 
 .portfolio-button-item:not(:last-child) {
@@ -40,12 +42,13 @@
     display: flex;
     flex-wrap: wrap;
 }
-
-.portfolio-item {
-    max-width: 450px;
-
-    &:not(:last-child) {
-        margin-bottom: 30px;
+@media screen and (max-width: 768px) {
+    .portfolio-item {
+        max-width: 450px;
+    
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
     }
 }
 
@@ -115,6 +118,35 @@
     .portfolio-link:hover &,
     .portfolio-link:focus & {
         transform: translateY(0%);
+    }
+}
+
+// =============================Tablet=============================
+
+@media screen and (min-width:768px) {
+    .portfolio-list-button{
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .portfolio-button-item {
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (min-width:768px){
+    .portfolio__photo {
+        width: 354px;
+        height: 294px;
+    }
+    .portfolio-item {
+        max-width: 354px;
+    
+        &:not(:nth-last-child(-n + 2)) {
+            margin-bottom: 30px;
+        }
+        &:not(:nth-child(2n)){
+            margin-right: 30px;
+        }
     }
 }
 
