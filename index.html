@@ -30,10 +30,10 @@
                     <li class="navigation__item"><a class="link navigation__link" href="">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="contact list">
+            <ul class="contact contact-container list">
                 <li>
-                    <a class="contact__link header__contact_tel link" href="mailto:info@devstudio.com">
-                        <svg class="contact__icon" width="16" height="12">
+                    <a class="contact__link header__contact_mail link" href="mailto:info@devstudio.com">
+                        <svg class="contact__icon contact__mail-icon" width="16" height="12">
                             <use href="./images/icons.svg#email"></use>
                         </svg >
                         <span>info@devstudio.com</span> 
@@ -41,7 +41,7 @@
                 </li>
                 <li>
                     <a class="contact__link link" href="tel:+380961111111">
-                        <svg class="contact__icon" width="10" height="16">
+                        <svg class="contact__icon contact__tel-icon" width="10" height="16">
                             <use href="./images/icons.svg#smartphone"></use>
                         </svg>
                         <span>+38 096 111 11 11</span>
@@ -50,12 +50,12 @@
             </ul>
         </div> 
         <div class="mobile-menu is-open" data-menu>
+            <button type="button" class="mobile-menu__close-btn" data-menu-close>
+                <svg class="mobile-menu__close-icon" width="40" height="40">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
             <div class="mobile-section">
-                <button type="button" class="mobile-menu__close-btn" data-menu-close>
-                    <svg class="mobile-menu__close-icon" width="40" height="40">
-                        <use href="./images/icons.svg#icon-close"></use>
-                    </svg>
-                </button>
                 <ul class="mobile-menu__navigation list">
                     <li class="mobile-menu__navigation-item">
                         <a class="mobile-menu__navigation-link link" href="./index.html">Студия</a>
@@ -439,7 +439,7 @@
             </form>
         </div>
     </footer>
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>
                 <svg class="modal-close-icon" width="18" height="18">
@@ -486,8 +486,8 @@
                 <button type="submit" class="backdrop-form-button">Отправить</button>
             </form>
         </div>
-    </div> -->
-    <!-- <script src="./js/modal.js"></script> -->
+    </div>
+    <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
 </body>
 </html>

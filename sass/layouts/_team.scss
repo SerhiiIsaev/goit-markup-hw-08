@@ -1,3 +1,6 @@
+
+// =================mobile=====================
+
 .team {
     background-color: var(--grey-light-color);
 }
@@ -67,10 +70,27 @@
     }
 }
 
+// =================Tablet=====================
 
-// .team {
-//     background-color: var(--grey-light-color);
-// }
+@media screen and (min-width: 768px){
+    .team-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -30px;
+        margin-bottom: -30px;
+    }
+    .team-list-item{
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+
+    .team__photo {
+        width: 354px;
+        height: 374px;
+    }
+}
+
+
 
 // .team-list {
 //     display: flex;

@@ -1,3 +1,6 @@
+
+// ======================mobile======================
+
 .navigation {
     display: none;
 }
@@ -45,6 +48,104 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+// ========================tablet========================
+
+@media screen and (min-width: 768px){
+    .mobile-menu-btn{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .navigation {
+        display: contents;
+    }
+    .navigation__list {
+        display: flex;
+    }
+    
+    .navigation__item:not(:last-child) {
+        margin-right: 50px;
+    }
+    .navigation__link {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--title-color);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:focus,
+        &:hover,
+        &:active{
+            color: var(--accent-color);
+        }
+    }
+    .navigation__link_current{
+        color: var(--accent-color);
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            display: block;
+            background-color: var(--accent-color);
+            height: 4px;
+            width: 100%;
+            left: 0px;
+            bottom: 0px;
+            border-radius: 2px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .contact{
+        display: contents;
+    }
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact__link {
+        display: flex;
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.02em;
+        color: inherit;
+        align-items: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:focus,
+        &:hover {
+            color: var(--accent-color);
+        }
+    }
+    .contact__icon {
+        fill: currentColor;
+        margin-right: 10px;
+    }
+    .contact__mail-icon{
+        width: 14px;
+        height: 10px;
+    }
+    .contact__tel-icon {
+        width: 10px;
+        height: 14px;
+    }
 }
 
 // .navigation__list {
