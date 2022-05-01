@@ -1,5 +1,5 @@
 
-// ========================mobile===================
+// =========================mobile======================
 
 .cpecifics-list-title {
     margin-bottom: 10px;
@@ -11,9 +11,10 @@
     text-transform: uppercase;
     color: var(--title-color);
 }
-
-.cpecifics-item:not(:last-child){
-    margin-bottom: 30px;
+@media screen and (max-width: 767px){
+    .cpecifics-item:not(:last-child){
+        margin-bottom: 30px;
+    }
 }
 
 .cpecifics-list-paragraph {
@@ -33,21 +34,16 @@
     margin-bottom: 30px;
 }
 
-// ===================tablet======================
+// =======================tablet==========================
 
 @media screen and (min-width: 768px){
     .cpecifics-list{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
     .cpecifics-box {
         width: 354px;
-    }
-    .cpecifics-item:nth-child(2n+1){
-        margin-right: 30px;
-    }
-    .cpecifics-item:not(:nth-last-child(-n+2)){
-        margin-bottom: 30px;
     }
     .cpecifics-list-paragraph{
         width: 354px;
@@ -57,37 +53,30 @@
     }
 }
 
-// .cpecifics-list {
-//     display: flex;
-// }
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    .cpecifics-item:nth-child(2n+1) {
+        margin-right: 30px;
+    }
 
-// .cpecifics-item:not(:last-child) {
-//     margin-right: 30px;
-// }
+    .cpecifics-item:not(:nth-last-child(-n+2)){
+        margin-bottom: 30px;
+    }
+}
 
-// .cpecifics-list-title {
-//     margin-bottom: 10px;
-//     font-weight: 700;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     letter-spacing: 0.03em;
-//     text-transform: uppercase;
-//     color: var(--title-color);
-// }
+// ======================Desctop==========================
 
-// .cpecifics-list-paragraph {
-//     width: 270px;
-//     font-size: 14px;
-//     line-height: 1.71;
-//     letter-spacing: 0.03em;
-// }
-
-// .cpecifics-box {
-//     display: flex;
-//     width: 270px;
-//     height: 120px;
-//     margin-bottom: 30px;
-//     background-color: var(--grey-light-color);
-//     justify-content: center;
-//     align-items: center;
-// }
+@media screen and (min-width: 1200px){
+    .cpecifics-list-paragraph {
+        width: 270px;
+    }
+    .cpecifics-box {
+        width: 270px;
+    }
+    .cpecifics-item{
+        margin-bottom: 0px;
+        &:not(:last-child){
+            margin-right: 30px;
+        }
+    }
+    
+}

@@ -148,79 +148,39 @@
     }
 }
 
-// .navigation__list {
-//     display: flex;
-// }
+// ========================Desktop========================
 
-// .navigation__item:not(:last-child) {
-//     margin-right: 50px;
-// }
+@media screen and (min-width: 1200px) {
 
-// .contact {
-//     margin-left: auto;
-//     display: flex;
-// }
+    .contact-container {
+        display: flex;
+        flex-direction: row;
+    }
+    .contact__link {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 14px;
+        line-height: 1.14;
+    }
+    .contact__mail-icon {
+        width: 16px;
+        height: 12px;
+    }
+    .contact__tel-icon {
+        width: 10px;
+        height: 16px;
+    }
+    .header__contact_mail{
+        margin-right: 30px;
+    }
+    .contact{
+        margin-left: auto;
+    }
 
-// .header__contact_tel {
-//     margin-right: 50px;
-// }
-
-// .header__logo {
-//     margin-right: 93px;
-// }
-
-// .navigation__link {
-//     padding-top: 30px;
-//     padding-bottom: 30px;
-//     font-family: inherit;
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     letter-spacing: 0.02em;
-//     color: var(--title-color);
-//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//     &:focus,
-//     &:hover,
-//     &:active{
-//         color: var(--accent-color);
-//     }
-// }
-
-// .contact__link {
-//     display: flex;
-//     padding-top: 30px;
-//     padding-bottom: 30px;
-//     font-family: inherit;
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     letter-spacing: 0.02em;
-//     color: inherit;
-//     align-items: center;
-//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//     &:focus,
-//     &:hover {
-//         color: var(--accent-color);
-//     }
-// }
-
-// .navigation__link_current{
-//     color: var(--accent-color);
-//     position: relative;
-//     &::after{
-//         content: "";
-//         position: absolute;
-//         display: block;
-//         background-color: var(--accent-color);
-//         height: 4px;
-//         width: 100%;
-//         left: 0px;
-//         bottom: 0px;
-//         border-radius: 2px;
-//     }
-// }
-
-// .contact__icon {
-//     fill: currentColor;
-//     margin-right: 10px;
-// }
+    .header__container {
+        justify-content: flex-start;
+    }
+    .header__logo {
+        margin-right: 93px;
+    }
+}
