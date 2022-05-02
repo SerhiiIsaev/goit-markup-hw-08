@@ -156,15 +156,45 @@
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="work-list list">
                     <li class="work-list-item">
-                        <img src="./images/box-1.jpg" alt="рабочий стол" width="370" height="294">
+                        <picture>
+                            <source 
+                            srcset="./images/desktop/work/box-1.webp 1x, ./images/desktop/work/box-1@2x.webp 2x" 
+                            type="image/webp" 
+                            />
+                            <source
+                            srcset="./images/desktop/work/box-1.jpg 1x, ./images/desktop/work/box-1@2x.jpg 2x"
+                            />
+                            <img src="./images/desktop/work/box-1.jpg" alt="рабочий стол" width="370" height="294"/>
+                        </picture>
+                        
                         <p class="work-img-text">Десктопные приложения</p> 
                     </li>
                     <li class="work-list-item">
-                        <img src="./images/box-2.jpg" alt="монитор ноутбука" width="370" height="294">
+                        <picture>
+                           <source 
+                            srcset="./images/desktop/work/box-2.webp 1x, ./images/desktop/work/box-2@2x.webp 2x" 
+                            type="image/webp" 
+                            />
+                            <source
+                            srcset="./images/desktop/work/box-2.jpg 1x, ./images/desktop/work/box-2@2x.jpg 2x"
+                            />
+                            <img src="./images/desktop/work/box-2.jpg" alt="монитор ноутбука" width="370" height="294">
+                        </picture>
+                        
                         <p class="work-img-text">Мобильные приложения</p>
                     </li>
                     <li class="work-list-item">
-                        <img src="./images/box-3.jpg" alt="игра на планшете" width="370" height="294">
+                        <picture>
+                            <source 
+                            srcset="./images/desktop/work/box-3.webp 1x, ./images/desktop/work/box-3@2x.webp 2x" 
+                            type="image/webp" 
+                            />
+                            <source
+                            srcset="./images/desktop/work/box-3.jpg 1x, ./images/desktop/work/box-3@2x.jpg 2x"
+                            />
+                            <img src="./images/desktop/work/box-3.jpg" alt="игра на планшете" width="370" height="294">
+                        </picture>
+                        
                         <p class="work-img-text">Дизайнерские решения</p>
                     </li>
                 </ul>
@@ -176,7 +206,36 @@
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="team-list list">
                     <li class="team-list-item">
-                        <img class="team__photo" src="./images/igor.jpg" alt="фото сотрудника">
+                        <picture>
+                            <source srcset="./images/desktop/team/igor.webp 1x, ./images/desktop/team/igor@2x.webp 2x" 
+                            media="(min-width:1200px)"
+                            type="image/webp" 
+                            />
+                            <source
+                            srcset="./images/desktop/team/igor.jpg 1x, ./images/desktop/team/igor@2x.jpg 2x"
+                            media="(min-width:1200px)"
+                            />
+
+                            <source srcset="./images/tablet/team/igor.webp 1x, ./images/tablet/team/igor@2x.webp 2x" 
+                            media="(min-width:768px)"
+                            type="image/webp" 
+                            />
+                            <source
+                            srcset="./images/tablet/team/igor.jpg 1x, ./images/tablet/team/igor@2x.jpg 2x"
+                            media="(min-width:768px)"
+                            />
+
+                            <source srcset="./images/mobile/team/igor.webp 1x, ./images/mobile/team/igor@2x.webp 2x" 
+                            media="(max-width:767px)"
+                            type="image/webp" 
+                            />
+                            <source
+                            srcset="./images/mobile/team/igor.jpg 1x, ./images/mobile/team/igor@2x.jpg 2x"
+                            media="(max-width:767px)"
+                            />
+                            <img class="team__photo" src="./images/mobile/team/igor.jpg" alt="фото сотрудника">
+                        </picture>
+                        
                         <div class="team-list-container">
                             <h3 class="team-list-title">Игорь Демьяненко</h3>
                             <p class="team-list-paragraph" lang="en">Product Designer</p>
@@ -213,7 +272,35 @@
                         </div>
                     </li>
                     <li class="team-list-item">
-                        <img class="team__photo" src="./images/olga.jpg" alt="фото сотрудника">
+                        <picture>
+                            <source srcset="./images/desktop/team/olga.webp 1x, ./images/desktop/team/olga@2x.webp 2x" 
+                            media="(min-width:1200px)"
+                            type="image/webp" 
+                            />
+                            <source
+                            srcset="./images/desktop/team/olga.jpg 1x, ./images/desktop/team/olga@2x.jpg 2x"
+                            media="(min-width:1200px)"
+                            />
+
+                            <source srcset="./images/tablet/team/olga.webp 1x, ./images/tablet/team/olga@2x.webp 2x" 
+                            media="(min-width:768px)"
+                            type="image/webp" 
+                            />
+                            <source
+                            srcset="./images/tablet/team/olga.jpg 1x, ./images/tablet/team/olga@2x.jpg 2x"
+                            media="(min-width:768px)"
+                            />
+
+                            <source srcset="./images/mobile/team/olga.webp 1x, ./images/mobile/team/olga@2x.webp 2x" 
+                            media="(max-width:767px)"
+                            type="image/webp" 
+                            />
+                            <source
+                            srcset="./images/mobile/team/olga.jpg 1x, ./images/mobile/team/olga@2x.jpg 2x"
+                            media="(max-width:767px)"
+                            />
+                            <img class="team__photo" src="./images/mobile/team/olga.jpg" alt="фото сотрудника">
+                        </picture>
                         <div class="team-list-container">
                             <h3 class="team-list-title">Ольга Репина</h3>
                             <p class="team-list-paragraph" lang="en">Frontend Developer</p>
@@ -250,7 +337,36 @@
                         </div>
                     </li>
                     <li class="team-list-item">
-                        <img class="team__photo" src="./images/nik.jpg" alt="фото сотрудника">
+                        <picture>
+                            <source srcset="./images/desktop/team/nik.webp 1x, ./images/desktop/team/nik@2x.webp 2x" 
+                            media="(min-width:1200px)"
+                            type="image/webp" 
+                            />
+                            <source
+                            srcset="./images/desktop/team/nik.jpg 1x, ./images/desktop/team/nik@2x.jpg 2x"
+                            media="(min-width:1200px)"
+                            />
+
+                            <source srcset="./images/tablet/team/nik.webp 1x, ./images/tablet/team/nik@2x.webp 2x" 
+                            media="(min-width:768px)"
+                            type="image/webp" 
+                            />
+                            <source
+                            srcset="./images/tablet/team/nik.jpg 1x, ./images/tablet/team/nik@2x.jpg 2x"
+                            media="(min-width:768px)"
+                            />
+
+                            <source srcset="./images/mobile/team/nik.webp 1x, ./images/mobile/team/nik@2x.webp 2x" 
+                            media="(max-width:767px)"
+                            type="image/webp" 
+                            />
+                            <source
+                            srcset="./images/mobile/team/nik.jpg 1x, ./images/mobile/team/nik@2x.jpg 2x"
+                            media="(max-width:767px)"
+                            />
+                            <img class="team__photo" src="./images/mobile/team/nik.jpg" alt="фото сотрудника">
+                        </picture>
+                        
                         <div class="team-list-container">
                             <h3 class="team-list-title">Николай Тарасов</h3>
                             <p class="team-list-paragraph" lang="en">Marketing</p>
@@ -287,7 +403,36 @@
                         </div>
                     </li>
                     <li class="team-list-item">
-                        <img class="team__photo" src="./images/misha.jpg" alt="фото сотрудника">
+                        <picture>
+                            <source srcset="./images/desktop/team/misha.webp 1x, ./images/desktop/team/misha@2x.webp 2x" 
+                            media="(min-width:1200px)"
+                            type="image/webp" 
+                            />
+                            <source
+                            srcset="./images/desktop/team/misha.jpg 1x, ./images/desktop/team/misha@2x.jpg 2x"
+                            media="(min-width:1200px)"
+                            />
+
+                            <source srcset="./images/tablet/team/misha.webp 1x, ./images/tablet/team/misha@2x.webp 2x" 
+                            media="(min-width:768px)"
+                            type="image/webp" 
+                            />
+                            <source
+                            srcset="./images/tablet/team/misha.jpg 1x, ./images/tablet/team/misha@2x.jpg 2x"
+                            media="(min-width:768px)"
+                            />
+
+                            <source srcset="./images/mobile/team/misha.webp 1x, ./images/mobile/team/misha@2x.webp 2x" 
+                            media="(max-width:767px)"
+                            type="image/webp" 
+                            />
+                            <source
+                            srcset="./images/mobile/team/misha.jpg 1x, ./images/mobile/team/misha@2x.jpg 2x"
+                            media="(max-width:767px)"
+                            />
+                            <img class="team__photo" src="./images/mobile/team/misha.jpg" alt="фото сотрудника">
+                        </picture>
+                        
                         <div class="team-list-container">
                             <h3 class="team-list-title">Михаил Ермаков</h3>
                             <p class="team-list-paragraph" lang="en">UI Designer</p>

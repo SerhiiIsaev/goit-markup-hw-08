@@ -22,7 +22,7 @@
     top: 0px;
     left: 0px;
     right: 0px;
-    padding-left: 40px;
+    padding-left: 8.3%;
     padding-top: 48px;
 }
 
@@ -137,4 +137,22 @@
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: var(--accent-color);
+}
+
+@media screen and (max-width:350px) {
+    .mobile-menu__tel {
+        font-size: 32px;
+    }
+
+    .mobile-menu__navigation-link {
+        font-size: 36px;
+    }
+
+    .mobile-menu__mail {
+        font-size: 22px;
+    }
+
+    .mobile-menu__social-link {
+        font-style: 16px;
+    }
 }

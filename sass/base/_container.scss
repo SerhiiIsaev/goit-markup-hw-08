@@ -2,7 +2,10 @@
 .container {
     padding-left: 15px;
     padding-right: 15px;
-    min-width: 320px;
+}
+@media screen and (max-width: 319px){
+    body{
+        overflow-x: scroll;}
 }
 
 @media screen and (min-width: 480px) {
