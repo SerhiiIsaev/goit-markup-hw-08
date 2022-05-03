@@ -65,11 +65,11 @@
 }
 
 // ==============================Tablet=================================
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
     
     .hero {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../../images/bg/hero-tab.jpg);
+            url(../images/bg/hero-tab.jpg);
         max-width: 768px;
     }
 
@@ -78,7 +78,7 @@
     (min-resolution: 2dppx) {
         .hero {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(../../images/bg/hero-tab@2x.jpg);
+                url(../images/bg/hero-tab@2x.jpg);
         }
     }
 }
@@ -92,7 +92,7 @@
         max-width: 1600px;
         .hero {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(../../images/bg/hero-desk.jpg);
+                url(../images/bg/hero-desk.jpg);
         }
     }
     .hero__title {
@@ -104,7 +104,7 @@
     (min-resolution: 2dppx) {
         .hero {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(../../images/bg/hero-desk@2x.jpg);
+                url(../images/bg/hero-desk@2x.jpg);
         }
     }
 }
