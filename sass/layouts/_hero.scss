@@ -1,31 +1,32 @@
 
 // ===========================mobile=======================
 
-.hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/bg/hero-mob.jpg);
-    background-size: cover;
+.hero{
     background-color: var(--background-hero-color);
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-    padding-top: 118px;
-    padding-bottom: 118px;
 }
+
 @media screen and (max-width:767px) {
     .hero{
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/bg/hero-mob.jpg);
         max-width: 480px;
+        padding-top: 118px;
+        padding-bottom: 118px;
+        background-size: cover;
+    }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/bg/hero-mob@2x.jpg);
+        }
     }
 }
 
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .hero {
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../images/bg/hero-mob@2x.jpg);
-    }
-}
 
 .hero__title {
     font-family: var(--primary-font-family);
@@ -71,6 +72,9 @@
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
             url(../images/bg/hero-tab.jpg);
         max-width: 768px;
+        padding-top: 118px;
+        padding-bottom: 118px;
+        background-size: cover;
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -86,18 +90,15 @@
 // ==============================Desktop=================================
 
 @media screen and (min-width: 1200px) {
+
     .hero{
         padding-top: 200px;
         padding-bottom: 200px;
         max-width: 1600px;
-        .hero {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(../images/bg/hero-desk.jpg);
-        }
-    }
-    .hero__title {
-        font-size: 44px;
-        line-height: 1.36;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/bg/hero-desk.jpg);
+        background-size: cover;
+        
     }
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -107,4 +108,9 @@
                 url(../images/bg/hero-desk@2x.jpg);
         }
     }
+    .hero__title {
+        font-size: 44px;
+        line-height: 1.36;
+    }
+    
 }

@@ -463,23 +463,23 @@ body {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg/hero-mob.jpg);
-  background-size: cover;
   background-color: var(--background-hero-color);
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  padding-top: 118px;
-  padding-bottom: 118px;
 }
 
 @media screen and (max-width: 767px) {
   .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg/hero-mob.jpg);
     max-width: 480px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-size: cover;
   }
 }
 
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg/hero-mob@2x.jpg);
   }
@@ -526,6 +526,9 @@ body {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg/hero-tab.jpg);
     max-width: 768px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-size: cover;
   }
 }
 
@@ -540,19 +543,21 @@ body {
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
-  }
-  .hero .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg/hero-desk.jpg);
-  }
-  .hero__title {
-    font-size: 44px;
-    line-height: 1.36;
+    background-size: cover;
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg/hero-desk@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 
